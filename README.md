@@ -56,8 +56,6 @@ For example, you could use one of the following tile servers:
 For some of these, you have to request an access token first.
 Please refer to the respective terms of service and copyrights.
 
-A private token for Mapbox from Michael Blaich is: pk.eyJ1IjoibWJsYWljaCIsImEiOiJja3hpMXEwdGs1enlzMnhsYWpuZTFybnZwIn0.cTlwI3ggzOPcI-hi816SAw
-
 ## Options
 
 - `Topic` is the topic of the GPS measurements.
@@ -67,6 +65,10 @@ A private token for Mapbox from Michael Blaich is: pk.eyJ1IjoibWJsYWljaCIsImEiOi
 - `Blocks` number of adjacent blocks to load. rviz_satellite will load the central block, and this many blocks around the center. 8 is the current max.
 
 ## Tile Examples
+Mediawiki
+
+![Alt text](.screenshot_Mediawiki.png?raw=true "Example Image")
+
 Mapbox light
 
 ![Alt text](.screenshot_Mapbox_light.png?raw=true "Example Image")
@@ -82,10 +84,6 @@ Mapbox street
 OpenStreetMap
 
 ![Alt text](.screenshot_OpenStreetMap.png?raw=true "Example Image")
-
-Mediawiki
-
-![Alt text](.screenshot_Mediawiki.png?raw=true "Example Image")
 
 ## Support and Contributions
 
