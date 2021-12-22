@@ -45,12 +45,18 @@ These will automatically be substituted by rviz_satellite when making HTTP reque
 rviz_satellite doesn't come with any preconfigured tile URL.
 For example, you could use one of the following tile servers:
 
+* Wikimedia: https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png (default)
 * OpenStreetMap: https://tile.openstreetmap.org/{z}/{x}/{y}.png
 * TomTom: https://api.tomtom.com/map/1/tile/basic/main/{z}/{x}/{y}.png?tileSize=512&key=[TOKEN]
 * Mapbox: https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}?access_token=[TOKEN]
+* Mapbox light: https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}?access_token=[TOKEN]
+* Mapbox dark: https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}?access_token=[TOKEN]
+* Mapbox streets: https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}?access_token=[TOKEN]
 
 For some of these, you have to request an access token first.
 Please refer to the respective terms of service and copyrights.
+
+A private token for Mapbox from Michael Blaich is: pk.eyJ1IjoibWJsYWljaCIsImEiOiJja3hpMXEwdGs1enlzMnhsYWpuZTFybnZwIn0.cTlwI3ggzOPcI-hi816SAw
 
 ## Options
 
@@ -59,6 +65,27 @@ Please refer to the respective terms of service and copyrights.
 - `Draw Under` will cause the map to be displayed below all other geometry.
 - `Zoom` is the zoom level of the map. Recommended values are 16-19, as anything smaller is _very_ low resolution. 22 is the current max.
 - `Blocks` number of adjacent blocks to load. rviz_satellite will load the central block, and this many blocks around the center. 8 is the current max.
+
+## Tile Examples
+Mapbox light
+
+![Alt text](.screenshot_Mapbox_light.png?raw=true "Example Image")
+
+Mapbox dark
+
+![Alt text](.screenshot_Mapbox_dark.png?raw=true "Example Image")
+
+Mapbox street
+
+![Alt text](.screenshot_Mapbox_street.png?raw=true "Example Image")
+
+OpenStreetMap
+
+![Alt text](.screenshot_OpenStreetMap.png?raw=true "Example Image")
+
+Mediawiki
+
+![Alt text](.screenshot_Mediawiki.png?raw=true "Example Image")
 
 ## Support and Contributions
 
